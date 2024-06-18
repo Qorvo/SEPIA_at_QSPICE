@@ -14,7 +14,7 @@ But you can directly pass on numbers without using **.param** statements
 
 ![](Image/Parameters.png)
 
-## Parameters
+## Load-Step Parameters
 
 ### Parameter #1:  Step-load Timing
 
@@ -23,7 +23,7 @@ At the given timing, the SEPIA@QSPICE block drives its "ctrl" output port from L
 
 ### Parameter #2:  Pre-Step Steady-State Timing
 
-The 2nd parameter is a floating number specifys the time point where the DUT system is in steady-state so that the SEPIA@QSPICE block starts detecting / averagin its pre-step voltage reference value.
+The 2nd parameter is a floating number specifys the time point where the DUT system is in steady-state so that the SEPIA@QSPICE block starts detecting / averaing its pre-step voltage reference value.
 
 ### Parameter #3:  Step-load Amplitude
 
@@ -33,8 +33,10 @@ This parameter is to calculate impedance of V = R x I.
 A negative ( "< 0A" ) number means a current flow "sinking" from the DUT.
 The expected use is well explained by the "G1" voltage-controlled-current-source element in this screen capture (above).
 
+***
+***
 
-### Parameter #4:  SEPIA@QSPICE Options
+## Parameter #4:  SEPIA@QSPICE Options
 
 The SEPIA@QSPICE module analyzes a TEXT string of option parameters.  
 Following options can be specified in any order but case sensitive.  
@@ -42,6 +44,8 @@ Between multiple options, **DO NOT** insert any comma or space.
 
 ***
 ***
+### One-Letter Options
+
 #### **x** Option
 When you have no option to activate from in this list, please use this **x** option.  
 This is a one-letter option.
@@ -64,11 +68,11 @@ char* Opt=v
 ````
 ***
 ***
-#### **l** Option (Lower-cse L, for "log")
+### **l** Option (Lower-case L, for "log")
 The **l** option triggers to output its logging information into a file.
 This is a multi-letter option, that must follow this syntax.
 
-##### **l:** or **l/**
+#### **l:** or **l/**
 These 2 forms are the same and the module automatically assign a log file name.
 Note both letters **":"** and **"/"** can't be used in a regular Windows filename and we use them as our delimiter.
 ````
@@ -79,7 +83,7 @@ or
 char* Opt=l/
 ````
 
-##### **l_file_name_:** or **l_file_name_/**
+#### **l_file_name_:** or **l_file_name_/**
 These 2 forms are the same and the module outputs its logging information into the filename specified.
 The ***\_file_name_*** can be anything sandwiched between **"l"** and **": or /"**.
 ````
@@ -91,12 +95,12 @@ char* Opt=l_file_name_/
 ````
 ***
 ***
-#### **t** Option
+### **t** Option
 The **t** option triggers to output its transient model with extracted parameters into a file.  
 It can also control if the module run a follow-up simulation by using the extracted model or not.
 This is a multi-letter option, that must follow this syntax.
 ***
-##### ***Model-0 Transient Option***
+#### ***Model-0 Transient Option***
 You can pick one of following 4 options.  
 The module has only one routing to execute an option starting **t0...**.
 
@@ -123,7 +127,7 @@ Then, it automatically runs a simulation on the transient model file.  You will 
 char* Opt=t0_file_name_/
 ````
 ***
-##### ***Model-1 Transient Option***
+#### ***Model-1 Transient Option***
 You can pick one of following 4 options.  
 The module has only one routing to execute an option starting **t1...**.
 
@@ -151,12 +155,12 @@ char* Opt=t1_file_name_/
 ````
 ***
 ***
-#### **a** Option
+### **a** Option
 The **a** option triggers to output its AC model with extracted parameters into a file.  
 It can also control if the module run a follow-up simulation by using the extracted model or not.
 This is a multi-letter option, that must follow this syntax.
-***
-##### ***Model-0 AC Option***
+
+#### ***Model-0 AC Option***
 You can pick one of following 4 options.  
 The module has only one routing to execute an option starting **a0...**.
 
@@ -183,7 +187,7 @@ Then, it automatically runs a simulation on the transient model file.  You will 
 char* Opt=a0_file_name_/
 ````
 ***
-##### ***Model-1 AC Option***
+#### ***Model-1 AC Option***
 You can pick one of following 4 options.  
 The module has only one routing to execute an option starting **a1...**.
 
@@ -211,7 +215,7 @@ char* Opt=a1_file_name_/
 ````
 
 
-#### Example of Complex Option String
+## Example of Complex Option String
 
 This is an example of valid option string.
 ````
