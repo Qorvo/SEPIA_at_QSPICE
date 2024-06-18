@@ -3,17 +3,23 @@
 ***
 
 Table of Contents
+* [RF Signal Integrity to Power Integrity](rf-signal-integrity-to-power-integrity)
 * *about* [SEPIA](#sepia)
 * *about* [QSPICE](#QSPICE)
 * *about* [PyQSPICE](#PyQSPICE)
 * *about* [SEPIA@QSPICE](#SEPIAQSPICE)
-* [Basic Operation](basic-operation)
+* [Basic Operation](#basic-operation)
 * [Usage / Example](#usage--example)
 * [Sub-Circuit Parameters](#sub-circuit-parameters)
 * [Usage from PyQSPICE](#usage-from-pyqspice)
 
 ***
 
+## RF Signal Integrity to Power Integrity
+
+Please visit and review the SEPIA article in the [RF Signal Integrity to Power Integirity](https://www.microwavejournal.com/blogs/32-rf-signal-integrity-to-power-integrity), a series article-on the [Microwave Journal](https://www.microwavejournal.com/), for the technical details.
+
+***
 
 ## SEPIA
 
@@ -68,7 +74,7 @@ At a high-level, the SEPIA@QSPICE circuit module operates in following steps.
 
 ## Usage / Example
 
-The basic usage of the SEPIA@QSPICE and examples are summarized in this [session file](README.ipynb) by utilizing the [Jupyter Lab](https://jupyter.org/) environment.
+The basic usage of the SEPIA@QSPICE and examples are summarized in this [session file](usage.ipynb) by utilizing the [Jupyter Lab](https://jupyter.org/) environment.
 
 > [!IMPORTANT]
 > So to run the Python code recorded in the session file, please install below 2 software packages.
