@@ -6,9 +6,9 @@ Table of Contents
 * *about* [SEPIA](#sepia)
 * *about* [QSPICE](#QSPICE)
 * *about* [PyQSPICE](#PyQSPICE)
-* [Usage / Example](#usage-example)
+* [Usage / Example](#usage--example)
 * [Sub-Circuit Parameters](#sub-circuit-parameters)
-* [Usage from PyQSPICE](#usage-from-pysqpice)
+* [Usage from PyQSPICE](#usage-from-pyqspice)
 
 ***
 
