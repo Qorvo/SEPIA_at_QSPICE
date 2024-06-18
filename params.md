@@ -99,7 +99,7 @@ char* Opt=l_file_name_/
 The **t** option triggers to output its transient model with extracted parameters into a file.  
 It can also control if the module run a follow-up simulation by using the extracted model or not.
 This is a multi-letter option, that must follow this syntax.
-***
+
 #### ***Model-0 Transient Option***
 You can pick one of following 4 options.  
 The module has only one routing to execute an option starting **t0...**.
@@ -160,6 +160,7 @@ The **a** option triggers to output its AC model with extracted parameters into 
 It can also control if the module run a follow-up simulation by using the extracted model or not.
 This is a multi-letter option, that must follow this syntax.
 
+***
 #### ***Model-0 AC Option***
 You can pick one of following 4 options.  
 The module has only one routing to execute an option starting **a0...**.
@@ -214,6 +215,8 @@ Then, it automatically runs a simulation on the transient model file.  You will 
 char* Opt=a1_file_name_/
 ````
 
+***
+***
 
 ## Example of Complex Option String
 
