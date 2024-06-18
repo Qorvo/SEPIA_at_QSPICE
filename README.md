@@ -83,5 +83,8 @@ The basic usage of the SEPIA@QSPICE and examples are summarized in this [session
 
 ## Sub-Circuit Parameters
 
+The SEPIA@QSPICE module takes four (4) sub-circuit parameters and all parameters are explained in [this manual](params.md).
+
 ## Usage from PyQSPICE
 
+When using SEPIA@QSPICE from a PyQSPICE environment, we can use a PyQSPICE method to control the SEPIA@QSPICE options described in [this manual](pyparams.md).
