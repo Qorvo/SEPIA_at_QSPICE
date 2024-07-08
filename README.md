@@ -17,7 +17,8 @@ Table of Contents
 
 ## RF Signal Integrity to Power Integrity
 
-Please visit and review the SEPIA article in the [RF Signal Integrity to Power Integirity](https://www.microwavejournal.com/blogs/32-rf-signal-integrity-to-power-integrity), a series article-on the [Microwave Journal](https://www.microwavejournal.com/), for the technical details.
+For the technical details,
+please visit and review the SEPIA article, that is [the 11th post, part-11](https://www.microwavejournal.com/blogs/32-rf-signal-integrity-to-power-integrity/post/42280-loop-analysis-directly-from-time-domain-waveform-with-sepia) in the [RF Signal Integrity to Power Integirity](https://www.microwavejournal.com/blogs/32-rf-signal-integrity-to-power-integrity), a series article-on the [Microwave Journal](https://www.microwavejournal.com/).
 
 ***
 
